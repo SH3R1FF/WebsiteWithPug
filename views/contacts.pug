@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/script.js") 
+
+block style 
+    style 
+        include ../static/style.css 
+        include ../static/styleContact.css 
+
+block content 
+    div.container 
+        h1 Contact Us 
+        form(action="/contacts", method="POST",class='myForm')  
+            input(type="text",class='myInput',name='Fullname',autocomplete = 'off', placeholder='Full name*')
+            input(type="email",class='myInput',name='EmailAddress',autocomplete = 'off', placeholder='Email address')
+            input(type="phone",class='myInput',name='Phonenumber',autocomplete = 'off', placeholder='Phone no.')
+            input(type="comment",class='mymsg',name='Message',autocomplete = 'off', placeholder='Your message*')
+            //- textarea(class="comment")
+            //-    | Type your comment here
+            button(type="submit",class='btn')
+                |SEND MESSAGE 

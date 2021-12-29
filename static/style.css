@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+    padding: 0px 210px 0px 0px;
+    font-family: 'Play', sans-serif;
+}
+
+#logo img{
+    height:50px;
+    padding: 0px 10px 0px 0px;
+}
+
+#navbar{
+   padding: 15px 10px;
+   background-color: black;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    font-weight:bold ;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 10px 34px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+}
+
+#navbar li a:hover{
+    background-color: rgb(245, 241, 11);
+    color: rgb(0, 0, 0);
+}
+
+#topproduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center/cover no-repeat url(/static/bg.jpg)  ;
+    height: 900px;
+    color: aliceblue;
+    
+}
+
+
+#deals{
+    display: flex;
+    align-items:center;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.card{
+    height:190px;
+    width: 30%;
+    margin: 20px 14px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+.card:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+.card h4{
+    font-family: 'Roboto Mono', monospace;
+    text-align:center;
+    margin: 14px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 100px;
+    margin: 2px 2px 2px 110px;
+
+}
+
+.card-img img{
+    height:100px;
+}
+
+#sponsers-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(240, 240, 240);
+}
+
+#sponsers{
+    height: 100px;
+    margin: auto;
+}
+#sponsers img{
+    height: 50px;
+    margin: 25px;
+}
+#sponsers img:hover{
+     background-color: rgb(240, 240, 240);
+}
+
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: black;
+    color: yellow;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.fontu{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.fontu1{
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    color: black;
+    background-color: yellow;
+}
+

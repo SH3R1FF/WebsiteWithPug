@@ -1,0 +1,57 @@
+doctype html
+html 
+    head 
+        title WizzGameShop
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar.navbar 
+            ul
+                div#logo
+                    img(src="/static/img/logo/logo0.png", alt="WizzGameShop", srcset="")
+                    | WizzGameShop
+                li #[a(href='/') HOME ]
+                li #[a(href='/') ACCESSORIES]
+                li #[a(href='/') SERVICES]
+                li #[a(href='/') ABOUT US]
+                li #[a(href='/contacts') CONTACT US ]
+
+        section#topproduct 
+            div.fontu1 Buy all your favourite gaming
+            div.fontu1 accessories at lowest price 
+        section#deals 
+            div.card
+                h4  PRE ORDER NEXT GEN CONSOLES
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/items/controller.png", alt="", srcset="")
+            div.card
+                h4  GAMING ACCESSORIES AND MORE FROM ₹399
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/items/Headset.png", alt="", srcset="")
+            div.card
+                h4  DISCOUNT DEALS UPTO 70%
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/items/laptop.png", alt="", srcset="")
+            div.card
+                h4  30 DAYS RETURN POLICY
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/items/ps4.png", alt="", srcset="")
+
+        section#sponsers-section 
+            #sponsers 
+                img(src="/static/img/partners/asuslogo.png", alt="", srcset="") 
+                img(src="/static/img/partners/logitechlogo.png", alt="", srcset="") 
+                img(src="/static/img/partners/nvidialogo.png", alt="", srcset="") 
+                img(src="/static/img/partners/ps4logo.png", alt="", srcset="") 
+                img(src="/static/img/partners/xboxlogo.png", alt="", srcset="") 
+        
+
+        footer#footer 
+            |© 2021 WizzGameShop.com - All Rights Reserved | Developed by sheriff
+
+        script 
+            include ../static/script.js 
